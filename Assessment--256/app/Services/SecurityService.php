@@ -19,13 +19,13 @@ class SecurityService
         if($assessment->getFirstname() == "CST-256")
         {
             //if matched will echo out message in controller by $passed
-          echo "<h3>Does match <br/></h3>";
+
             return true;
         }
         else 
         {
             //if does not match than will echo out message in controller by using $passed
-            echo "<h3>Does not match<br/></h3>";          
+                    
             return false;
         }
     }

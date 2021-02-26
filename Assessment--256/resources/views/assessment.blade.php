@@ -27,6 +27,11 @@
 				</td>
 		</table>
 	</form>
-
-	 
+	@if(isset($passed))
+		@if($passed)
+			<h3>Matches CST-256</h3>
+		@else
+			<h3>Does not match CST-256</h3>
+		@endif
+	@endif 
 		</body>

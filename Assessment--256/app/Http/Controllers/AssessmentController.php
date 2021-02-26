@@ -30,10 +30,10 @@ class AssessmentController extends Controller
         your favorite color is ". $color . " and you were born in ". $month . ".";   
         
         //echo whether or not the form passed from security service file
-        echo $passed;
+      //  echo $passed;
         
-        $data = ['firstname' => $firstname, 'lastname' => $lastname, 'color'=> $color, 'month'=>$month];
-        return view('assessment')->with($data);
+        $data = ['firstname' => $firstname, 'lastname' => $lastname, 'color'=> $color, 'month'=>$month, 'passed'=> $passed];
+        return view('assessment')->with($data,$passed);
         
     }
     
